@@ -4,7 +4,7 @@ class Student():
         self.__prénom = "John"
         self.__numeroetudiant = "145"
         self.__crédits = 0
-        self.__level = Student._studentEval
+        self.__level = ""
     
     def getCrédits(self):
         return self.__crédits
@@ -35,9 +35,9 @@ class Student():
         elif creditsactuels >= 90:
             print("excellent")
     def studentInfo(self):
-        print("Nom",Student.getNom)
-        print("Prénom", Student.getPrenom)
-        print("ID", Student.getId)
+        print("Nom")
+        print("Prénom")
+        print("ID")
         print("Niveau")
 
 

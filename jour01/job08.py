@@ -11,11 +11,16 @@ class Livre():
     def getTitre(self):
         return self.__titre
     
+    
+    
     def setAuteur(self, auteur):
         self.__auteur = auteur 
         return self.__auteur
+    
     def getAuteur(self):
         return self.__auteur
+    
+    
     
     def setNbpages(self, nbpages):
         if nbpages >= 0 and nbpages%1 == 0:
@@ -23,8 +28,11 @@ class Livre():
             return self.__nbpages
         else:
             print("Erreur, le nombre de pages doit être supérieur à 0 et être un nombre entier")
+    
     def getNbpages(self):
         return self.__nbpages
+    
+    
     
     def vérification(self, disponibilité):
         self.__disponibilité = disponibilité
@@ -32,12 +40,14 @@ class Livre():
             return self.__disponibilité
         elif disponibilité == False:
             return self.__disponibilité == False
+    
     def emprunter(self, emprunter):
         emprunter = False
         if emprunter == True:
             self.vérification = False
         elif self.vérification == True:
             emprunter = False
+    
     def rendre(self, rendre):
         rendre = False
         if rendre == True and self.emprunter == True:
