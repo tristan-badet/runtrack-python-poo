@@ -20,4 +20,9 @@ class Cercle(Forme):
     def __init__(self):
         self.radius = 10
     def aire(self):
-        (self.radius ** 2)
+        print("l'aire du cercle est",(self.radius ** 2))
+
+rect2 = Rectangle()
+cer = Cercle()
+rect2.aire()
+cer.aire()
